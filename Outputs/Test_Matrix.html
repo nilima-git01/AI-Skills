@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table { font-family: Arial, sans-serif; border-collapse: collapse; width: 100%; }
+td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+.passed { color: green; font-weight: bold; }
+.failed { color: red; font-weight: bold; }
+</style>
+</head>
+<body>
+<h2>Requirements Traceability & Test Execution Matrix</h2>
+<table>
+  <tr>
+    <th>Requirement ID</th>
+    <th>Feature</th>
+    <th>Test Case ID</th>
+    <th>Status (Pass/Failed)</th>
+  </tr>
+  <tr>
+    <td>REQ-VWO-01</td>
+    <td>VWO Login Authentication</td>
+    <td>TC_VWO_001, TC_VWO_002, TC_VWO_003</td>
+    <td class="passed">Passed</td>
+  </tr>
+  <tr>
+    <td>REQ-VWO-02</td>
+    <td>VWO Remember Me functionality</td>
+    <td>TC_VWO_004</td>
+    <td class="failed">Failed</td>
+  </tr>
+  <tr>
+    <td>REQ-API-01</td>
+    <td>API POST Booking Valid Payload</td>
+    <td>TC_API_001</td>
+    <td class="passed">Passed</td>
+  </tr>
+  <tr>
+    <td>REQ-API-02</td>
+    <td>API POST Booking Invalid Payload Error Handling</td>
+    <td>TC_API_002</td>
+    <td class="failed">Failed</td>
+  </tr>
+</table>
+</body>
+</html>
