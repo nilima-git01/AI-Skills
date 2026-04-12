@@ -1,0 +1,7 @@
+Test Case ID,Description,Steps,Expected Result,Actual Result,Status
+TC_VWO_001,Verify successful login with valid credentials,"1. Navigate to VWO login page\n2. Enter valid email\n3. Enter valid password\n4. Click Sign In",User is redirected to the dashboard,Pass,Passed
+TC_VWO_002,Verify login with invalid credentials,"1. Navigate to VWO login page\n2. Enter invalid email or password\n3. Click Sign In",Error message 'Your email password IP address or location did not match' is displayed,Error message displayed,Passed
+TC_VWO_003,Verify login with empty fields,"1. Navigate to VWO login page\n2. Leave email and password empty\n3. Click Sign In",Validation error prompts for required fields,Validation error displayed,Passed
+TC_VWO_004,Verify 'Remember Me' functionality,"1. Navigate to VWO login page\n2. Enter valid credentials\n3. Check 'Remember Me'\n4. Click Sign In\n5. Close and reopen browser",User is automatically logged in or email is pre-filled,Functionality not fully working,Failed
+TC_API_001,Verify RESTful Booker API POST request,1. Send POST request to /booking endpoint with valid payload,201 Created and booking details returned,201 Created,Passed
+TC_API_002,Verify RESTful Booker API POST request with missing payload,1. Send POST request to /booking endpoint with missing payload,400 Bad Request with accurate error message,500 Internal Server Error returned instead of 400,Failed
